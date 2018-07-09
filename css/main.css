@@ -1,42 +1,90 @@
-body {
-  font: normal 100%/2  Arial, Helvetica, sans-serif;
-  user-select: none;
+html, body {
+  min-height: 100%;
+  /* no importa el zoom, siempre se ve bien */
 }
 
-/* * {
+body {
+  font: normal 100%/2  Arial, Helvetica, sans-serif;
+  background: #1E1E1E url("../media/bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #000;
+}
+
+* {
     box-sizing: border-box;
-} */
+}
 
 /* Layout */
 
-.msg {
-  width: auto;
-  max-width: 760px;
-  display: table;
-  border-radius: 10px;
-  border-bottom-left-radius: 0px;
-  background: #2a6ef7;
-  padding: 0px 10px;
-  margin-top: 10px;
-}
-
-.chat {
-  margin-bottom: 0;
-  color: #fff;
-}
-
-.time {
-  font-size: 10px;
-  color: #e0e0eb;
-  text-align: right;
+#obra {
+  background-color: rgba(255,255,255,0.75);
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px;
 }
 
 /* General */
 
-h1 {
+h1, h2 {
   text-align: center;
 }
 
-p {
-  margin: 0;
+h1 {
+  font-size: 4.5em;
+  letter-spacing: 0.25em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+nav {
+  font-size: 2em;
+  text-align: center;
+	position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+	overflow: hidden;
+}
+
+nav ul li {
+	float: left;
+	width: 50%;
+}
+
+nav ul li:first-child a {
+  border-bottom-left-radius:  0px;
+  background-color: rgba(42,110,247,0);
+}
+
+nav ul li:first-child a:hover {
+  color: rgba(255,255,255,1);
+  background-color: rgba(42,110,247,1);
+}
+
+nav ul li:last-child a {
+  border-bottom-right-radius:  0px;
+  background-color: rgba(121,126,135,0);
+}
+
+nav ul li:last-child a:hover {
+  color: rgba(255,255,255,1);
+  background-color: rgba(121,126,135,1);
+}
+
+nav a {
+  border-radius: 50px;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.5);
+  text-decoration: none;
+  display: block;
+  border: 0;
+  padding: 0.25em;
+  transition: color 500ms, background-color 500ms;
 }

@@ -1,0 +1,42 @@
+body {
+  font: normal 100%/2  Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+
+/* * {
+    box-sizing: border-box;
+} */
+
+/* Layout */
+
+.msg {
+  width: auto;
+  max-width: 760px;
+  display: table;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  background: #2a6ef7;
+  padding: 0px 10px;
+  margin-top: 10px;
+}
+
+.chat {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.time {
+  font-size: 10px;
+  color: #e0e0eb;
+  text-align: right;
+}
+
+/* General */
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
