@@ -3,8 +3,9 @@ var m;
 var s;
 
 console.log(messageInTime.length);
+
 /*
-var frasesPorHora = [
+var mensagesTiempo = [
   ["hola"],
   [null],
   ["chau"],
@@ -12,8 +13,8 @@ var frasesPorHora = [
 ];
 */
 
-/*frasesPorHora[hora][minuto]
-frasesPorHora[m][s]*/
+/*mensajesTiempo[hora][minuto]
+mensajesTiempo[m][s]*/
 
 setInterval(function(){
 
@@ -30,8 +31,19 @@ setInterval(function(){
     chat.classList.add("chat");
     var time = document.createElement("p");
     time.classList.add("time");
-    time.innerHTML = h + ":" + m;
     chat.innerHTML = messageInTime[m][s];
+
+    //arregla el tiempo cuando hay un solo digito
+    if (m < 10 && h > 9) {
+      time.innerHTML = h + ":0" + m;
+    } else if (m < 10 && h < 10) {
+      time.innerHTML = "0" + h + ":0" + m;
+    } else if (m > 9 && h < 10) {
+      time.innerHTML = "0" + h + ":" + m;
+    } else {
+      time.innerHTML = h + ":" + m;
+    }
+
     msg.appendChild(chat);
     msg.appendChild(time);
     document.body.appendChild(msg);
