@@ -2,7 +2,7 @@ var d;
 var m;
 var s;
 
-console.log(messageSec.length);
+console.log(messageInTime.length);
 /*
 var frasesPorHora = [
   ["hola"],
@@ -22,9 +22,9 @@ setInterval(function(){
   s = d.getSeconds();
   console.log(m,s);
 
-  if (messageinTime[m][s]) {
+  if (messageInTime[m][s]) {
     var msg = document.createElement("div");
-    msg.innerHTML = messageinTime[m][s];
+    msg.innerHTML = messageInTime[m][s];
     document.body.appendChild(msg);
   }
 

@@ -1,4 +1,4 @@
-var messageinTime = [
+var messageInTime = [
   //minuto0
   [null, "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", null, "once", "doce", "trece", "catorce", "quince", "diecieis", "diecisiete", "dieciocho", "diecinueve", null, "veintiuno", "veintidos", "veintitres", "veinticuatro", "veinticinco", "veintiseis", "veintisiete", "veintiocho", "veintinueve", null, "treintaiuno", "treintaidos", "treintaitres", "treintaicuatro", "treintaicinco", "treintaiseis", "treintaisiete", "treintaiocho", "treintainueve", null, "cuarentaiuno", "cuarentaidos", "cuarentaitres", "cuarentaicuatro", "cuarentaicinco", "cuarentaiseis", "cuarentaisiete", "cuarentaiocho", "cuarentainueve", null, "cincuentaiuno", "cincuentaidos", "cincuentaitres", "cincuentaicuatro", "cincuentaicinco", "cincuentaiseis", "cincuentaisiete", "cincuentaiocho", "cincuentainueve"],
   //minuto1
