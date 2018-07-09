@@ -1,14 +1,17 @@
 var d;
 var m;
 var s;
-var frases = ["hola", "chau", "che", "todo", "bien?", "bueno", "me", "voy"];
-var index = 0;
+var messageSec = ["cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez", "once", "doce", "trece", "catorce", "quince", "diecieis", "diecisiete", "dieciocho", "diecinueve", "veinte", "veintiuno", "veintidos", "veintitres", "veinticuatro", "veinticinco", "veintiseis", "veintisiete", "veintiocho", "veintinueve", "treinta", "treintaiuno", "treintaidos", "treintaitres", "treintaicuatro", "treintaicinco", "treintaiseis", "treintaisiete", "treintaiocho", "treintainueve", "cuarenta", "cuarentaiuno", "cuarentaidos", "cuarentaitres", "cuarentaicuatro", "cuarentaicinco", "cuarentaiseis", "cuarentaisiete", "cuarentaiocho", "cuarentainueve", "cincuenta", "cincuentaiuno", "cincuentaidos", "cincuentaitres", "cincuentaicuatro", "cincuentaicinco", "cincuentaiseis", "cincuentaisiete", "cincuentaiocho", "cincuentainueve"];
+
+console.log(messageSec.length);
+/*
 var frasesPorHora = [
   ["hola"],
   [null],
   ["chau"],
   [null]
 ];
+*/
 
 /*frasesPorHora[hora][minuto]
 frasesPorHora[m][s]*/
@@ -20,10 +23,10 @@ setInterval(function(){
   s = d.getSeconds();
   console.log(m,s);
 
-  if (frasesPorHora[m][s]) {
-    var palabra = document.createElement("div");
-    palabra.innerHTML = frasesPorHora[m][s];
-    document.body.appendChild(palabra);
+  if (messageSec[s]) {
+    var msg = document.createElement("div");
+    msg.innerHTML = messageSec[s];
+    document.body.appendChild(msg);
   }
 
 }, 1000);
