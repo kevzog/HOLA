@@ -12,10 +12,11 @@ body {
   float: right;
   border-radius: 10px;
   border-bottom-right-radius: 0px;
-  background: #797e87;
+  background: #039900;
   padding: 0px 10px;
   margin: 5px 5px;
   clear: both;
+  box-shadow: -1px 1px 5px grey;
 }
 
 .chat {
