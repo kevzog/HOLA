@@ -24,7 +24,12 @@ setInterval(function(){
   s = d.getSeconds();
   console.log(m,s);
 
-  if (messageInTime[m][s]) {
+  if (messageInTime[m][s] == change) {
+    console.log("change");
+    var newchat = document.createElement("HR");
+    newchat.classList.add("newchat");
+    document.body.appendChild(newchat);
+  } else if (messageInTime[m][s]) {
     var msg = document.createElement("div");
     msg.classList.add("msg");
     var chat = document.createElement("p");
