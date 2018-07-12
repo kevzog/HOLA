@@ -4,18 +4,6 @@ var s;
 
 console.log(messageInTime.length);
 
-/*
-var mensagesTiempo = [
-  ["hola"],
-  [null],
-  ["chau"],
-  [null]
-];
-*/
-
-/*mensajesTiempo[hora][minuto]
-mensajesTiempo[m][s]*/
-
 setInterval(function(){
 
   d = new Date();

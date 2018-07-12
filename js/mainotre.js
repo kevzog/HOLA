@@ -3,17 +3,6 @@ var m;
 var s;
 
 console.log(messageInTime.length);
-/*
-var frasesPorHora = [
-  ["hola"],
-  [null],
-  ["chau"],
-  [null]
-];
-*/
-
-/*frasesPorHora[hora][minuto]
-frasesPorHora[m][s]*/
 
 setInterval(function(){
 
