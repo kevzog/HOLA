@@ -1,8 +1,3 @@
-body {
-  font: normal 100%/2  Arial, Helvetica, sans-serif;
-  user-select: none;
-}
-
 /* Layout */
 
 .msg {
@@ -12,7 +7,7 @@ body {
   float: right;
   border-radius: 10px;
   border-bottom-right-radius: 0px;
-  background: #039900;
+  background: #03b300;
   padding: 0px 10px;
   margin: 5px 5px;
   clear: both;
@@ -35,6 +30,12 @@ body {
 }
 
 /* General */
+
+body {
+  font: normal 100%/2  Arial, Helvetica, sans-serif;
+  user-select: none;
+  overflow: hidden;
+}
 
 h1 {
   text-align: center;

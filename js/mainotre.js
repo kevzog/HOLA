@@ -4,6 +4,8 @@ var s;
 
 console.log(messageInTime.length);
 
+var container = document.querySelector("#container");
+
 setInterval(function(){
 
   d = new Date();
@@ -16,7 +18,7 @@ setInterval(function(){
     console.log("change");
     var newchat = document.createElement("HR");
     newchat.classList.add("newchat");
-    document.body.appendChild(newchat);
+    container.appendChild(newchat);
   } else if (messageInTime[m][s]) {
     var msg = document.createElement("div");
     msg.classList.add("msg");
@@ -39,7 +41,10 @@ setInterval(function(){
 
     msg.appendChild(chat);
     msg.appendChild(time);
-    document.body.appendChild(msg);
+    container.appendChild(msg);
+
+    document.documentElement.scrollTop += 100;
+    document.body.scrollTop += 100;
   }
 
 }, 1000);
