@@ -5,7 +5,7 @@ html, body {
 
 body {
   font: normal 100%/2  Arial, Helvetica, sans-serif;
-  background: #1E1E1E url("../media/bg.jpg") no-repeat center center;
+  background: #1E1E1E url("../img/bg.jpg") no-repeat center center;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -45,46 +45,17 @@ nav {
   font-size: 2em;
   text-align: center;
 	position: relative;
+
 }
 
 nav ul {
+  padding: 0;
   list-style-type: none;
 	overflow: hidden;
 }
 
 nav ul li {
 	float: left;
+  transform: scale(0.7);
 	width: 50%;
-}
-
-nav ul li:first-child a {
-  border-bottom-left-radius:  0px;
-  background-color: rgba(42,110,247,0);
-}
-
-nav ul li:first-child a:hover {
-  color: rgba(255,255,255,1);
-  background-color: rgba(42,110,247,1);
-}
-
-nav ul li:last-child a {
-  border-bottom-right-radius:  0px;
-  background-color: rgba(3,153,0,0);
-}
-
-nav ul li:last-child a:hover {
-  color: rgba(255,255,255,1);
-  background-color: rgba(3,153,0,1);
-}
-
-nav a {
-  border-radius: 50px;
-  font-size: 0.875em;
-  text-transform: uppercase;
-  color: rgba(0,0,0,0.5);
-  text-decoration: none;
-  display: block;
-  border: 0;
-  padding: 0.25em;
-  transition: color 500ms, background-color 500ms;
 }
