@@ -28,7 +28,6 @@ setInterval(function(){
     time.classList.add("time");
     chat.innerHTML = messageInTime[m][s];
 
-    //arregla el tiempo cuando hay un solo digito
     if (m < 10 && h > 9) {
       time.innerHTML = h + ":0" + m;
     } else if (m < 10 && h < 10) {
@@ -48,9 +47,3 @@ setInterval(function(){
   }
 
 }, 1000);
-
-/*
- websocket<-----
-interpretar qr
-acceso de ambos
-*/
